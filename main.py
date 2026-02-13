@@ -15,8 +15,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # === Из Railway Variables (добавь их в дашборд!) ===
-TELEGRAM_TOKEN = os.getenv("8224405732:AAG36lqqApmEmrAMGm4ikhu4fIG5Zvm-pRs")
-CLOTHOFF_TOKEN = os.getenv("b8f2922a81aac1bab2f7c1d28b2f6d5be9705f73")  # только строка без "Bearer "
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+CLOTHOFF_TOKEN = os.getenv("CLOTHOFF_TOKEN")  # только строка без "Bearer "
 
 BASE_URL = "https://test-bot-production-8a33.up.railway.app"  # ← твой домен!
 WEBHOOK_PATH = "/clothoff-webhook"
@@ -150,4 +150,3 @@ async def root():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8080)))
-
