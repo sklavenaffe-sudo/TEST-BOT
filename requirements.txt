@@ -1,7 +1,4 @@
 aiogram==3.13.1
 fastapi
 uvicorn
-aiohttp
-pyTelegramBotAPI
 requests
-flask
